@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="2">
+  <test name="Merchant Service Test">
+    <classes>
+      <class name="com.project.passbook.merchantService.service.MerchantServiceImplTest"/>
+      <class name="com.project.passbook.merchantService.manager.MerchantManagerTest"/>
+      <class name="com.project.passbook.merchantService.dao.MerchantDaoTest"/>
+    </classes>
+  </test>
+</suite>

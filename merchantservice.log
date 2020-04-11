@@ -1,0 +1,809 @@
+2020-03-28 00:00:00.004  INFO 20384 --- [http-nio-9527-exec-1] c.p.p.m.controllers.MerchantController   : CreatingMerchant: CreateMerchantRequest(merchantName=Bank of America, logoUrl=www.boa.com/logo, businessLicenseUrl=www.boa.com/business-license, phone=9193457979, address=BoA headquarter)
+2020-03-28 00:00:00.027  INFO 20384 --- [http-nio-9527-exec-1] c.p.p.m.dao.MerchantManager              : Checking if merchant Bank of America already exists
+2020-03-28 00:42:46.774  INFO 20384 --- [http-nio-9527-exec-4] c.p.p.m.controllers.MerchantController   : FindingMerchant: FindMerchantRequest(merchantId=1)
+2020-03-28 00:43:30.663  INFO 20384 --- [http-nio-9527-exec-5] c.p.p.m.controllers.MerchantController   : CreatingMerchant: CreateMerchantRequest(merchantName=Google, logoUrl=www.google.com/logo, businessLicenseUrl=www.google.com/business-license, phone=9193457979, address=Google headquarter)
+2020-03-28 00:43:30.664  INFO 20384 --- [http-nio-9527-exec-5] c.p.p.m.dao.MerchantManager              : Checking if merchant Google already exists
+2020-03-28 00:43:30.667  INFO 20384 --- [http-nio-9527-exec-5] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=null, name=Google, logoUrl=www.google.com/logo, businessLicenseUrl=www.google.com/business-license, phone=9193457979, address=Google headquarter, isAudit=false)
+2020-03-28 00:50:08.311  WARN 20384 --- [http-nio-9527-exec-8] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2020-03-28 00:51:02.674  INFO 2452 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 2452 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 00:51:02.679  INFO 2452 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 00:51:03.566  INFO 2452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 00:51:03.659  INFO 2452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 1 JPA repository interfaces.
+2020-03-28 00:51:04.571  INFO 2452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 00:51:04.583  INFO 2452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 00:51:04.583  INFO 2452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 00:51:04.714  INFO 2452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 00:51:04.715  INFO 2452 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1970 ms
+2020-03-28 00:51:04.907  INFO 2452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 00:51:04.983  INFO 2452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 00:51:05.117  INFO 2452 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 00:51:05.243  INFO 2452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 00:51:05.594  INFO 2452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 00:51:05.615  INFO 2452 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 00:51:06.351  INFO 2452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 00:51:06.360  INFO 2452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:51:06.977  WARN 2452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 00:51:07.129  INFO 2452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:51:07.424  INFO 2452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 00:51:07.426  INFO 2452 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.273 seconds (JVM running for 5.797)
+2020-03-28 00:51:15.634  INFO 2452 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 00:51:15.636  INFO 2452 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 00:51:15.645  INFO 2452 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-03-28 00:52:21.036  INFO 20844 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 20844 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 00:52:21.042  INFO 20844 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 00:52:22.160  INFO 20844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 00:52:22.268  INFO 20844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 1 JPA repository interfaces.
+2020-03-28 00:52:23.328  INFO 20844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 00:52:23.340  INFO 20844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 00:52:23.341  INFO 20844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 00:52:23.462  INFO 20844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 00:52:23.462  INFO 20844 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2335 ms
+2020-03-28 00:52:23.704  INFO 20844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 00:52:23.790  INFO 20844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 00:52:23.943  INFO 20844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 00:52:24.098  INFO 20844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 00:52:24.549  INFO 20844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 00:52:24.581  INFO 20844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 00:52:25.451  INFO 20844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 00:52:25.459  INFO 20844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:52:26.022  WARN 20844 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 00:52:26.154  INFO 20844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:52:26.480  INFO 20844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 00:52:26.483  INFO 20844 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 6.138 seconds (JVM running for 6.827)
+2020-03-28 00:52:36.209  INFO 20844 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 00:52:36.210  INFO 20844 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 00:52:36.220  INFO 20844 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-28 00:53:14.360  INFO 20844 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:53:14.362  INFO 20844 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:53:14.365  INFO 20844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 00:53:14.383  INFO 20844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 00:53:19.183  INFO 14852 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 14852 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 00:53:19.187  INFO 14852 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 00:53:20.119  INFO 14852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 00:53:20.210  INFO 14852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-03-28 00:53:21.406  INFO 14852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 00:53:21.418  INFO 14852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 00:53:21.418  INFO 14852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 00:53:21.545  INFO 14852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 00:53:21.545  INFO 14852 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2285 ms
+2020-03-28 00:53:21.773  INFO 14852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 00:53:21.858  INFO 14852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 00:53:22.028  INFO 14852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 00:53:22.174  INFO 14852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 00:53:22.595  INFO 14852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 00:53:22.625  INFO 14852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 00:53:23.511  INFO 14852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 00:53:23.520  INFO 14852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:53:24.022  WARN 14852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 00:53:24.164  INFO 14852 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:53:24.446  INFO 14852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 00:53:24.448  INFO 14852 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.889 seconds (JVM running for 6.561)
+2020-03-28 00:53:34.969  INFO 14852 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 00:53:34.970  INFO 14852 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 00:53:34.979  INFO 14852 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-28 00:54:34.986  WARN 14852 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s290ms734µs900ns).
+2020-03-28 00:54:35.022  INFO 14852 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:54:35.025  INFO 14852 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:54:35.028  INFO 14852 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 00:54:35.049  INFO 14852 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 00:54:45.426  INFO 15276 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 15276 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 00:54:45.431  INFO 15276 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 00:54:46.420  INFO 15276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 00:54:46.564  INFO 15276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 1 JPA repository interfaces.
+2020-03-28 00:54:47.618  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 00:54:47.629  INFO 15276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 00:54:47.629  INFO 15276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 00:54:47.756  INFO 15276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 00:54:47.756  INFO 15276 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2255 ms
+2020-03-28 00:54:47.961  INFO 15276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 00:54:48.053  INFO 15276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 00:54:48.228  INFO 15276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 00:54:48.359  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 00:54:48.737  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 00:54:48.767  INFO 15276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 00:54:49.500  INFO 15276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 00:54:49.506  INFO 15276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:54:50.029  WARN 15276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 00:54:50.189  INFO 15276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:54:50.484  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 00:54:50.487  INFO 15276 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.696 seconds (JVM running for 6.213)
+2020-03-28 00:55:06.549  INFO 15276 --- [http-nio-9527-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 00:55:06.551  INFO 15276 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 00:55:06.558  INFO 15276 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-03-28 00:58:25.844  INFO 11188 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 11188 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 00:58:25.849  INFO 11188 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 00:58:26.638  INFO 11188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 00:58:26.722  INFO 11188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 1 JPA repository interfaces.
+2020-03-28 00:58:27.716  INFO 11188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 00:58:27.727  INFO 11188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 00:58:27.727  INFO 11188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 00:58:27.861  INFO 11188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 00:58:27.862  INFO 11188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1960 ms
+2020-03-28 00:58:28.050  INFO 11188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 00:58:28.123  INFO 11188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 00:58:28.252  INFO 11188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 00:58:28.372  INFO 11188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 00:58:28.728  INFO 11188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 00:58:28.750  INFO 11188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 00:58:29.456  INFO 11188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 00:58:29.463  INFO 11188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 00:58:29.900  WARN 11188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 00:58:30.052  INFO 11188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 00:58:30.360  INFO 11188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 00:58:30.362  INFO 11188 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.05 seconds (JVM running for 5.623)
+2020-03-28 00:58:33.769  INFO 11188 --- [http-nio-9527-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 00:58:33.770  INFO 11188 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 00:58:33.781  INFO 11188 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-28 01:00:10.649  INFO 13708 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 13708 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:00:10.655  INFO 13708 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:00:11.906  INFO 13708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:00:12.009  INFO 13708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 1 JPA repository interfaces.
+2020-03-28 01:00:13.176  INFO 13708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:00:13.188  INFO 13708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:00:13.188  INFO 13708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:00:13.313  INFO 13708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:00:13.314  INFO 13708 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2583 ms
+2020-03-28 01:00:13.550  INFO 13708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:00:13.636  INFO 13708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:00:13.790  INFO 13708 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:00:13.939  INFO 13708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:00:14.405  INFO 13708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:00:14.426  INFO 13708 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:00:15.276  INFO 13708 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:00:15.284  INFO 13708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:00:15.793  WARN 13708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:00:15.953  INFO 13708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:00:16.284  INFO 13708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:00:16.287  INFO 13708 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 6.325 seconds (JVM running for 7.204)
+2020-03-28 01:00:19.973  INFO 13708 --- [http-nio-9527-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:00:19.974  INFO 13708 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:00:19.986  INFO 13708 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-28 01:22:20.457  INFO 13708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:22:20.458  INFO 13708 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:22:20.462  INFO 13708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 01:22:20.476  INFO 13708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 01:22:45.554  INFO 13512 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 13512 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:22:45.559  INFO 13512 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:22:46.399  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:22:46.482  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 1 JPA repository interfaces.
+2020-03-28 01:22:50.629  INFO 23264 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 23264 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:22:50.634  INFO 23264 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:22:51.582  INFO 23264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:22:51.677  INFO 23264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 1 JPA repository interfaces.
+2020-03-28 01:22:52.744  INFO 23264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:22:52.757  INFO 23264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:22:52.757  INFO 23264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:22:52.883  INFO 23264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:22:52.883  INFO 23264 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2179 ms
+2020-03-28 01:22:53.090  INFO 23264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:22:53.180  INFO 23264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:22:53.347  INFO 23264 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:22:53.490  INFO 23264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:22:53.912  INFO 23264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:22:53.937  INFO 23264 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:22:55.024  INFO 23264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:22:55.032  INFO 23264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:22:55.568  WARN 23264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:22:55.720  INFO 23264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:22:56.026  INFO 23264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:22:56.030  INFO 23264 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 6.057 seconds (JVM running for 6.891)
+2020-03-28 01:23:16.767  INFO 23264 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:23:16.768  INFO 23264 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:23:16.779  INFO 23264 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-28 01:23:24.908  INFO 23264 --- [http-nio-9527-exec-1] c.p.p.m.controllers.CouponController     : CreatingCoupon: AddCouponRequest()
+2020-03-28 01:25:36.214  INFO 23264 --- [http-nio-9527-exec-1] c.p.p.m.service.CouponServiceImpl        : Adding the coupon AddCouponRequest()
+2020-03-28 01:25:36.214  WARN 23264 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s378ms348µs500ns).
+2020-03-28 01:25:36.251  INFO 23264 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:25:36.252  INFO 23264 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:25:36.256  INFO 23264 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 01:25:36.279  INFO 23264 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 01:26:07.340  INFO 11508 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 11508 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:26:07.344  INFO 11508 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:26:08.193  INFO 11508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:26:08.281  INFO 11508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+2020-03-28 01:26:09.190  INFO 11508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:26:09.201  INFO 11508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:26:09.202  INFO 11508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:26:09.309  INFO 11508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:26:09.310  INFO 11508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1894 ms
+2020-03-28 01:26:09.496  INFO 11508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:26:09.581  INFO 11508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:26:09.715  INFO 11508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:26:09.860  INFO 11508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:26:10.249  INFO 11508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:26:10.276  INFO 11508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:26:10.965  INFO 11508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:26:10.970  INFO 11508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:26:11.407  WARN 11508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:26:11.531  INFO 11508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:26:11.789  INFO 11508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:26:11.791  INFO 11508 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.065 seconds (JVM running for 5.807)
+2020-03-28 01:26:16.849  INFO 11508 --- [http-nio-9527-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:26:16.850  INFO 11508 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:26:16.862  INFO 11508 --- [http-nio-9527-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-03-28 01:30:23.243  INFO 12544 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 12544 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:30:23.251  INFO 12544 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:30:24.181  INFO 12544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:30:24.268  INFO 12544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 1 JPA repository interfaces.
+2020-03-28 01:30:25.191  INFO 12544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:30:25.203  INFO 12544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:30:25.204  INFO 12544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:30:25.338  INFO 12544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:30:25.339  INFO 12544 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2012 ms
+2020-03-28 01:30:25.529  INFO 12544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:30:25.606  INFO 12544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:30:25.743  INFO 12544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:30:25.854  INFO 12544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:30:26.211  INFO 12544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:30:26.236  INFO 12544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:30:26.936  INFO 12544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:30:26.942  INFO 12544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:30:27.375  WARN 12544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:30:27.505  INFO 12544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:30:27.774  INFO 12544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:30:27.776  INFO 12544 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.157 seconds (JVM running for 5.68)
+2020-03-28 01:30:33.892  INFO 12544 --- [http-nio-9527-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:30:33.893  INFO 12544 --- [http-nio-9527-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:30:33.901  INFO 12544 --- [http-nio-9527-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-03-28 01:31:08.672  INFO 12544 --- [http-nio-9527-exec-4] c.p.p.m.controllers.CouponController     : CreatingCoupon: AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=null, hasToken=null, background=null, startTime=null, endTime=null)
+2020-03-28 01:31:08.698  INFO 12544 --- [http-nio-9527-exec-4] c.p.p.m.service.CouponServiceImpl        : Adding the coupon AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=null, hasToken=null, background=null, startTime=null, endTime=null)
+2020-03-28 01:31:08.770  INFO 12544 --- [http-nio-9527-exec-4] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-03-28 01:31:08.906  INFO 12544 --- [http-nio-9527-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-03-28 01:31:08.907  INFO 12544 --- [http-nio-9527-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-03-28 01:31:08.907  INFO 12544 --- [http-nio-9527-exec-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1585384268903
+2020-03-28 01:31:09.156  WARN 12544 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {coupon=LEADER_NOT_AVAILABLE}
+2020-03-28 01:31:09.161  INFO 12544 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 3y-LJXClSse_R76l2sPF4Q
+2020-03-28 01:31:09.256  WARN 12544 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 3 : {coupon=LEADER_NOT_AVAILABLE}
+2020-03-28 01:31:09.367  WARN 12544 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {coupon=LEADER_NOT_AVAILABLE}
+2020-03-28 01:31:09.481 ERROR 12544 --- [http-nio-9527-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.kafka.common.errors.SerializationException: Can't convert value of class com.project.passbook.merchantService.entities.CouponTemplate to class org.apache.kafka.common.serialization.StringSerializer specified in value.serializer] with root cause
+
+java.lang.ClassCastException: class com.project.passbook.merchantService.entities.CouponTemplate cannot be cast to class java.lang.String (com.project.passbook.merchantService.entities.CouponTemplate is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.kafka.common.serialization.StringSerializer.serialize(StringSerializer.java:28) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:894) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:856) ~[kafka-clients-2.3.1.jar:na]
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:592) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:404) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:216) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.project.passbook.merchantService.service.CouponTemplateServiceImpl.addCoupon(CouponServiceImpl.java:32) ~[classes/:na]
+	at com.project.passbook.merchantService.controllers.CouponTemplateController.createCoupon(CouponController.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-28 01:35:08.467  INFO 12544 --- [http-nio-9527-exec-8] c.p.p.m.controllers.CouponController     : CreatingCoupon: AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:35:08.469  INFO 12544 --- [http-nio-9527-exec-8] c.p.p.m.service.CouponServiceImpl        : Adding the coupon AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:35:08.479 ERROR 12544 --- [http-nio-9527-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.kafka.common.errors.SerializationException: Can't convert value of class com.project.passbook.merchantService.entities.CouponTemplate to class org.apache.kafka.common.serialization.StringSerializer specified in value.serializer] with root cause
+
+java.lang.ClassCastException: class com.project.passbook.merchantService.entities.CouponTemplate cannot be cast to class java.lang.String (com.project.passbook.merchantService.entities.CouponTemplate is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.kafka.common.serialization.StringSerializer.serialize(StringSerializer.java:28) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:894) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:856) ~[kafka-clients-2.3.1.jar:na]
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:592) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:404) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:216) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.project.passbook.merchantService.service.CouponTemplateServiceImpl.addCoupon(CouponServiceImpl.java:32) ~[classes/:na]
+	at com.project.passbook.merchantService.controllers.CouponTemplateController.createCoupon(CouponController.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-28 01:42:29.269  INFO 4116 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 4116 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:42:29.274  INFO 4116 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:42:30.278  INFO 4116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:42:30.359  INFO 4116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 1 JPA repository interfaces.
+2020-03-28 01:42:31.479  INFO 4116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:42:31.489  INFO 4116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:42:31.490  INFO 4116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:42:31.597  INFO 4116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:42:31.598  INFO 4116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2258 ms
+2020-03-28 01:42:31.793  INFO 4116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:42:31.869  INFO 4116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:42:32.011  INFO 4116 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:42:32.132  INFO 4116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:42:32.477  INFO 4116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:42:32.509  INFO 4116 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:42:33.258  INFO 4116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:42:33.264  INFO 4116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:42:33.704  WARN 4116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:42:33.840  INFO 4116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:42:34.106  INFO 4116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:42:34.109  INFO 4116 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 5.399 seconds (JVM running for 5.904)
+2020-03-28 01:42:37.833  INFO 4116 --- [http-nio-9527-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:42:37.834  INFO 4116 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:42:37.846  INFO 4116 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-28 01:42:37.966  INFO 4116 --- [http-nio-9527-exec-2] c.p.p.m.controllers.CouponController     : CreatingCoupon: AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:42:37.988  INFO 4116 --- [http-nio-9527-exec-2] c.p.p.m.service.CouponServiceImpl        : Adding the coupon AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:42:38.064  INFO 4116 --- [http-nio-9527-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-03-28 01:42:38.211  INFO 4116 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-03-28 01:42:38.211  INFO 4116 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-03-28 01:42:38.212  INFO 4116 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1585384958207
+2020-03-28 01:42:38.369  INFO 4116 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 3y-LJXClSse_R76l2sPF4Q
+2020-03-28 01:42:38.378 ERROR 4116 --- [http-nio-9527-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.kafka.common.errors.SerializationException: Can't convert value of class com.project.passbook.merchantService.entities.CouponTemplate to class org.apache.kafka.common.serialization.StringSerializer specified in value.serializer] with root cause
+
+java.lang.ClassCastException: class com.project.passbook.merchantService.entities.CouponTemplate cannot be cast to class java.lang.String (com.project.passbook.merchantService.entities.CouponTemplate is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+	at org.apache.kafka.common.serialization.StringSerializer.serialize(StringSerializer.java:28) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:894) ~[kafka-clients-2.3.1.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:856) ~[kafka-clients-2.3.1.jar:na]
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:592) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:404) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:216) ~[spring-kafka-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.project.passbook.merchantService.service.CouponTemplateServiceImpl.addCoupon(CouponServiceImpl.java:32) ~[classes/:na]
+	at com.project.passbook.merchantService.controllers.CouponTemplateController.createCoupon(CouponController.java:28) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-28 01:48:11.140  INFO 4688 --- [main] c.p.p.m.MerchantServiceApplication       : Starting MerchantServiceApplication on LAPTOP-0M9TKC0V with PID 4688 (C:\Users\yunch\Documents\devstuff\merchantService\target\classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 01:48:11.151  INFO 4688 --- [main] c.p.p.m.MerchantServiceApplication       : No active profile set, falling back to default profiles: default
+2020-03-28 01:48:12.210  INFO 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 01:48:12.323  INFO 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102ms. Found 1 JPA repository interfaces.
+2020-03-28 01:48:13.376  INFO 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9527 (http)
+2020-03-28 01:48:13.388  INFO 4688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-28 01:48:13.389  INFO 4688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-28 01:48:13.524  INFO 4688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-28 01:48:13.525  INFO 4688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2282 ms
+2020-03-28 01:48:13.737  INFO 4688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 01:48:13.832  INFO 4688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 01:48:14.037  INFO 4688 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 01:48:14.183  INFO 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 01:48:14.548  INFO 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 01:48:14.569  INFO 4688 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 01:48:15.469  INFO 4688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 01:48:15.475  INFO 4688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 01:48:16.002  WARN 4688 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 01:48:16.162  INFO 4688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 01:48:16.497  INFO 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9527 (http) with context path ''
+2020-03-28 01:48:16.499  INFO 4688 --- [main] c.p.p.m.MerchantServiceApplication       : Started MerchantServiceApplication in 6.01 seconds (JVM running for 6.595)
+2020-03-28 01:48:23.310  INFO 4688 --- [http-nio-9527-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 01:48:23.312  INFO 4688 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-28 01:48:23.322  INFO 4688 --- [http-nio-9527-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-28 01:48:23.492  INFO 4688 --- [http-nio-9527-exec-2] c.p.p.m.controllers.CouponController     : CreatingCoupon: AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:48:23.526  INFO 4688 --- [http-nio-9527-exec-2] c.p.p.m.service.CouponServiceImpl        : Adding the coupon AddCouponRequest(merchantId=1, title=Saving discount, summary=Offer 10% off of transaction fee when saving 1000$, desc=XXXXXXXXX, limit=1000, hasToken=true, background=1, startTime=Wed Jan 31 06:13:52 PST 452401, endTime=Wed Jan 31 06:13:52 PST 452401)
+2020-03-28 01:48:23.626  INFO 4688 --- [http-nio-9527-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-03-28 01:48:23.783  INFO 4688 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-03-28 01:48:23.784  INFO 4688 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-03-28 01:48:23.784  INFO 4688 --- [http-nio-9527-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1585385303781
+2020-03-28 01:48:24.028  INFO 4688 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 3y-LJXClSse_R76l2sPF4Q
+2020-03-28 14:37:00.595  INFO 27488 --- [main] c.p.p.m.dao.MerchantDaoTest              : Starting MerchantDaoTest on LAPTOP-0M9TKC0V with PID 27488 (C:\Users\yunch\Documents\devstuff\merchantService\target\test-classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 14:37:00.599  INFO 27488 --- [main] c.p.p.m.dao.MerchantDaoTest              : The following profiles are active: dev
+2020-03-28 14:37:02.602  INFO 27488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 14:37:02.780  INFO 27488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 1 JPA repository interfaces.
+2020-03-28 14:37:04.768  INFO 27488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 14:37:05.017  INFO 27488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 14:37:05.437  INFO 27488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 14:37:05.752  INFO 27488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 14:37:06.666  INFO 27488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 14:37:06.748  INFO 27488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 14:37:08.219  INFO 27488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 14:37:08.234  INFO 27488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:37:09.414  WARN 27488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 14:37:09.879  INFO 27488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:37:10.506  INFO 27488 --- [main] c.p.p.m.dao.MerchantDaoTest              : Started MerchantDaoTest in 11.174 seconds (JVM running for 14.698)
+2020-03-28 14:37:11.444  INFO 27488 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:37:11.454  INFO 27488 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:37:11.455  INFO 27488 --- [main] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=2, name=testName, logoUrl=null, businessLicenseUrl=null, phone=9193457979, address=null, isAudit=false)
+2020-03-28 14:37:11.644  INFO 27488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:37:11.647  INFO 27488 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:37:11.653  INFO 27488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 14:37:11.676  INFO 27488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 14:38:40.355  INFO 27540 --- [main] c.p.p.m.dao.MerchantDaoTest              : Starting MerchantDaoTest on LAPTOP-0M9TKC0V with PID 27540 (C:\Users\yunch\Documents\devstuff\merchantService\target\test-classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 14:38:40.359  INFO 27540 --- [main] c.p.p.m.dao.MerchantDaoTest              : The following profiles are active: dev
+2020-03-28 14:38:41.774  INFO 27540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 14:38:41.913  INFO 27540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123ms. Found 1 JPA repository interfaces.
+2020-03-28 14:38:43.070  INFO 27540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 14:38:43.238  INFO 27540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 14:38:43.457  INFO 27540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 14:38:43.629  INFO 27540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 14:38:44.169  INFO 27540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 14:38:44.215  INFO 27540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 14:38:45.365  INFO 27540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 14:38:45.379  INFO 27540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:38:46.469  WARN 27540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 14:38:46.827  INFO 27540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:38:47.416  INFO 27540 --- [main] c.p.p.m.dao.MerchantDaoTest              : Started MerchantDaoTest in 7.768 seconds (JVM running for 9.95)
+2020-03-28 14:38:48.315  INFO 27540 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:38:48.324  INFO 27540 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:38:48.324  INFO 27540 --- [main] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=2, name=testName, logoUrl=null, businessLicenseUrl=null, phone=9193457979, address=null, isAudit=false)
+2020-03-28 14:38:48.450  INFO 27540 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:38:48.452  INFO 27540 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:38:48.456  INFO 27540 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 14:38:48.470  INFO 27540 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 14:39:35.710  INFO 13348 --- [main] c.p.p.m.dao.MerchantDaoTest              : Starting MerchantDaoTest on LAPTOP-0M9TKC0V with PID 13348 (C:\Users\yunch\Documents\devstuff\merchantService\target\test-classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 14:39:35.712  INFO 13348 --- [main] c.p.p.m.dao.MerchantDaoTest              : The following profiles are active: dev
+2020-03-28 14:39:36.899  INFO 13348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 14:39:37.026  INFO 13348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 1 JPA repository interfaces.
+2020-03-28 14:39:38.192  INFO 13348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 14:39:38.348  INFO 13348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 14:39:38.587  INFO 13348 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 14:39:38.760  INFO 13348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 14:39:39.271  INFO 13348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 14:39:39.320  INFO 13348 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 14:39:40.499  INFO 13348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 14:39:40.510  INFO 13348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:39:41.570  WARN 13348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 14:39:41.931  INFO 13348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:39:42.611  INFO 13348 --- [main] c.p.p.m.dao.MerchantDaoTest              : Started MerchantDaoTest in 7.617 seconds (JVM running for 9.912)
+2020-03-28 14:39:43.458  INFO 13348 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:39:43.466  INFO 13348 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:39:43.467  INFO 13348 --- [main] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=2, name=testName, logoUrl=null, businessLicenseUrl=null, phone=9193457979, address=null, isAudit=false)
+2020-03-28 14:39:43.600  INFO 13348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:39:43.604  INFO 13348 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:39:43.609  INFO 13348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 14:39:43.628  INFO 13348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 14:45:45.335  INFO 19508 --- [main] c.p.p.m.dao.MerchantDaoTest              : Starting MerchantDaoTest on LAPTOP-0M9TKC0V with PID 19508 (C:\Users\yunch\Documents\devstuff\merchantService\target\test-classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 14:45:45.339  INFO 19508 --- [main] c.p.p.m.dao.MerchantDaoTest              : The following profiles are active: dev
+2020-03-28 14:45:46.544  INFO 19508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 14:45:46.681  INFO 19508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 1 JPA repository interfaces.
+2020-03-28 14:45:47.866  INFO 19508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 14:45:48.060  INFO 19508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 14:45:48.306  INFO 19508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 14:45:48.510  INFO 19508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 14:45:49.027  INFO 19508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 14:45:49.098  INFO 19508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 14:45:50.396  INFO 19508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 14:45:50.410  INFO 19508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:45:51.533  WARN 19508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 14:45:51.937  INFO 19508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:45:52.520  INFO 19508 --- [main] c.p.p.m.dao.MerchantDaoTest              : Started MerchantDaoTest in 7.926 seconds (JVM running for 10.334)
+2020-03-28 14:45:53.452  INFO 19508 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:45:53.462  INFO 19508 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:45:53.464  INFO 19508 --- [main] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=2, name=testName, logoUrl=null, businessLicenseUrl=null, phone=9193457979, address=null, isAudit=false)
+2020-03-28 14:45:53.621  INFO 19508 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:45:53.623  INFO 19508 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:45:53.627  INFO 19508 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 14:45:53.644  INFO 19508 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-28 14:49:08.870  INFO 19460 --- [main] c.p.p.m.dao.MerchantDaoTest              : Starting MerchantDaoTest on LAPTOP-0M9TKC0V with PID 19460 (C:\Users\yunch\Documents\devstuff\merchantService\target\test-classes started by yunch in C:\Users\yunch\Documents\devstuff\merchantService)
+2020-03-28 14:49:08.872  INFO 19460 --- [main] c.p.p.m.dao.MerchantDaoTest              : The following profiles are active: dev
+2020-03-28 14:49:10.177  INFO 19460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-28 14:49:10.342  INFO 19460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 1 JPA repository interfaces.
+2020-03-28 14:49:11.478  INFO 19460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-28 14:49:11.647  INFO 19460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-28 14:49:11.862  INFO 19460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-28 14:49:12.046  INFO 19460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-28 14:49:12.553  INFO 19460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-28 14:49:12.611  INFO 19460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-03-28 14:49:13.957  INFO 19460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-28 14:49:13.970  INFO 19460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:49:15.162  WARN 19460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-28 14:49:15.560  INFO 19460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:49:16.170  INFO 19460 --- [main] c.p.p.m.dao.MerchantDaoTest              : Started MerchantDaoTest in 8.063 seconds (JVM running for 10.46)
+2020-03-28 14:49:17.037  INFO 19460 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:49:17.048  INFO 19460 --- [main] c.p.p.m.dao.MerchantManager              : Checking if merchant testName already exists
+2020-03-28 14:49:17.049  INFO 19460 --- [main] c.p.p.m.dao.MerchantManager              : Saving the new merchant Merchant(id=2, name=testName, logoUrl=null, businessLicenseUrl=null, phone=9193457979, address=null, isAudit=false)
+2020-03-28 14:49:17.221  INFO 19460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:49:17.224  INFO 19460 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-28 14:49:17.228  INFO 19460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-28 14:49:17.242  INFO 19460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
