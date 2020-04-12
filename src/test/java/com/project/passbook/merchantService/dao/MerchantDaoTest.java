@@ -1,11 +1,13 @@
 package com.project.passbook.merchantService.dao;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
 import com.project.passbook.merchantService.MerchantServiceApplication;
 import com.project.passbook.merchantService.model.entities.Merchant;
+import java.util.List;
 import java.util.Optional;
 import javax.annotation.Resource;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -24,12 +26,15 @@ public class MerchantDaoTest extends AbstractTestNGSpringContextTests {
   private MerchantDao merchantDao;
 
   private Merchant TEST_MERCHANT_1;
+  private Merchant TEST_MERCHANT_2;
 
   @BeforeClass
   public void setUp() throws Exception {
     // Create test data
     TEST_MERCHANT_1 = createTestMerchant();
     merchantDao.save(TEST_MERCHANT_1);
+    TEST_MERCHANT_2 = createTestMerchant();
+    merchantDao.save(TEST_MERCHANT_2);
   }
 
   @Test
@@ -62,6 +67,32 @@ public class MerchantDaoTest extends AbstractTestNGSpringContextTests {
   public void givenMerchantInfo_whenCreateMerchant_thenSucceed() {
     Merchant merchant = merchantDao.save(createTestMerchant());
     assertNotNull(merchant);
+  }
+
+  @Test
+  public void givenExistingMerchantIds_whenGetMerchants_thenSucceed() {
+    List<Merchant> merchants = merchantDao.findAllById(List.of(1,2));
+
+    assertEquals(merchants.size(), 2);
+
+    assertEquals(merchants.get(0), TEST_MERCHANT_1);
+    assertEquals(merchants.get(1), TEST_MERCHANT_2);
+  }
+
+  @Test
+  public void givenNotAllExistingMerchantIds_whenGetMerchants_thenReturnExistingMerchants() {
+    List<Merchant> merchants = merchantDao.findAllById(List.of(1,-1));
+
+    assertEquals(merchants.size(), 1);
+
+    assertEquals(merchants.get(0), TEST_MERCHANT_1);
+  }
+
+  @Test
+  public void givenNonExistingMerchantIds_whenGetMerchants_thenReturnEmpty() {
+    List<Merchant> merchants = merchantDao.findAllById(List.of(-1, -2));
+
+    assertTrue(merchants.isEmpty());
   }
 
   private Merchant createTestMerchant() {

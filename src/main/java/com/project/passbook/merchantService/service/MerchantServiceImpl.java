@@ -6,9 +6,10 @@ import com.project.passbook.merchantService.model.entities.Merchant;
 import com.project.passbook.merchantService.model.responses.Response;
 import com.project.passbook.merchantService.requests.CreateMerchantRequest;
 import com.project.passbook.merchantService.requests.FindMerchantRequest;
+import com.project.passbook.merchantService.requests.FindMerchantsRequest;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,5 +42,13 @@ public class MerchantServiceImpl implements MerchantService {
     return new Response(ErrorCode.SUCCESS,
                         null,
                         merchant);
+  }
+
+  @Override
+  public Response getMerchantsById(FindMerchantsRequest findMerchantsRequest) {
+    List<Integer> merchantIds = findMerchantsRequest.getMerchantIds();
+    List<Merchant> merchants = merchantManager.findByIds(merchantIds);
+
+    return new Response(merchants.size() < merchantIds.size()? ErrorCode.NOT_FOUND : ErrorCode.SUCCESS, null, merchants);
   }
 }

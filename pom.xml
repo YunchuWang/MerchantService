@@ -139,7 +139,6 @@
         <type>pom</type>
         <scope>runtime</scope>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
 

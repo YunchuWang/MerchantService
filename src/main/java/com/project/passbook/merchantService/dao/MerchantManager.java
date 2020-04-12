@@ -3,6 +3,7 @@ package com.project.passbook.merchantService.dao;
 import com.project.passbook.merchantService.model.entities.Merchant;
 import com.project.passbook.merchantService.model.exceptions.types.ConflictException;
 import com.project.passbook.merchantService.model.exceptions.types.NotFoundException;
+import java.util.List;
 import java.util.Optional;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,14 @@ public class MerchantManager {
     }
 
     return merchant.get();
+  }
+
+  public List<Merchant> findByIds(final List<Integer> merchantIds) throws NotFoundException {
+    List<Merchant> merchants = merchantDao.findAllById(merchantIds);
+    if (merchants.isEmpty()) {
+      throw new NotFoundException(String.format("Merchants with ids %s do not exist.", merchantIds));
+    }
+    return merchants;
   }
 
   public Merchant findByName(final String merchantName) throws NotFoundException {

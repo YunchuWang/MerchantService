@@ -24,7 +24,7 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
                                   null);
 
     return new ResponseEntity<>(error,
-                                HttpStatus.NOT_FOUND);
+                                HttpStatus.BAD_REQUEST);
   }
 
   @ExceptionHandler(ConflictException.class)

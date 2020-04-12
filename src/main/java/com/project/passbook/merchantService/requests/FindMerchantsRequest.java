@@ -11,13 +11,13 @@ import lombok.NonNull;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FindMerchantRequest {
+public class FindMerchantsRequest {
 
   @NonNull
-  private Integer merchantId;
+  private List<Integer> merchantIds;
 
 
   public void validate(MerchantManager merchantManager) throws NotFoundException {
-    merchantManager.findById(merchantId);
+    merchantManager.findByIds(merchantIds);
   }
 }
