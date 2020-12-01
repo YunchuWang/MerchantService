@@ -1,8 +1,6 @@
 package com.project.passbook.merchantService.requests;
 
-import com.project.passbook.merchantService.dao.MerchantManager;
-import com.project.passbook.merchantService.model.entities.Merchant;
-import com.project.passbook.merchantService.model.exceptions.types.NotFoundException;
+import com.project.passbook.merchantService.entities.Merchant;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,11 +25,6 @@ public class CreateMerchantRequest {
 
   @NonNull
   private String address;
-
-  // Validate whether
-  public void validate(MerchantManager merchantManager) throws NotFoundException {
-    merchantManager.findByName(merchantName);
-  }
 
   public Merchant toDao() {
     return Merchant.builder()

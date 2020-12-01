@@ -21,9 +21,9 @@ public class CouponTemplateController {
     this.couponTemplateService = couponTemplateService;
   }
 
-  @PostMapping(value = "/coupontemplate")
+  @PostMapping(value = "/merchants/coupontemplate")
   @ResponseBody
-  public ResponseEntity<Response> createCoupon(@Valid @RequestBody AddCouponTemplateRequest request) {
+  public ResponseEntity<Response> createCouponTemplate(@Valid @RequestBody AddCouponTemplateRequest request) {
     log.info("CreatingCouponTemplate: {}", request);
     Response response = couponTemplateService.addCouponTemplate(request);
 

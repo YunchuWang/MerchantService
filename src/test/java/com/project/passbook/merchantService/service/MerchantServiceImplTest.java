@@ -5,7 +5,7 @@ import static org.testng.Assert.assertEquals;
 
 import com.project.passbook.merchantService.dao.MerchantManager;
 import com.project.passbook.merchantService.model.codes.ErrorCode;
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import com.project.passbook.merchantService.model.responses.Response;
 import com.project.passbook.merchantService.requests.CreateMerchantRequest;
 import com.project.passbook.merchantService.requests.FindMerchantRequest;

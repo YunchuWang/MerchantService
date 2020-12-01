@@ -16,7 +16,6 @@ public class FindMerchantsRequest {
   @NonNull
   private List<Integer> merchantIds;
 
-
   public void validate(MerchantManager merchantManager) throws NotFoundException {
     merchantManager.findByIds(merchantIds);
   }

@@ -13,3 +13,5 @@ public interface MerchantService {
 
   Response getMerchantsById(FindMerchantsRequest findMerchantsRequest);
 }
+
+

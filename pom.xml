@@ -10,10 +10,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.project.passbook</groupId>
-  <artifactId>merchantService</artifactId>
+  <artifactId>MerchantService</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>merchantService</name>
-  <description>Merchant service for virtual passbook system</description>
+  <name>MerchantService</name>
+  <description>Merchant Service for virtual passbook system</description>
 
   <properties>
     <java.version>11</java.version>
@@ -60,10 +60,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -125,7 +121,7 @@
     <dependency>
       <groupId>com.github.YunchuWang</groupId>
       <artifactId>PassbookModel</artifactId>
-      <version>1.0.3</version>
+      <version>1.0.4</version>
     </dependency>
   </dependencies>
 

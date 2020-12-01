@@ -1,6 +1,6 @@
 package com.project.passbook.merchantService.dao;
 
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;

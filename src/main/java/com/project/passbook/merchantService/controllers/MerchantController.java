@@ -1,12 +1,14 @@
 package com.project.passbook.merchantService.controllers;
 
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import com.project.passbook.merchantService.model.responses.Response;
 import com.project.passbook.merchantService.requests.CreateMerchantRequest;
 import com.project.passbook.merchantService.requests.FindMerchantRequest;
 import com.project.passbook.merchantService.requests.FindMerchantsRequest;
 import com.project.passbook.merchantService.service.MerchantService;
 import java.util.List;
+import javax.validation.Valid;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,17 +20,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
+@AllArgsConstructor
 public class MerchantController {
 
   private MerchantService merchantService;
 
-  public MerchantController(MerchantService merchantService) {
-    this.merchantService = merchantService;
-  }
-
   @PostMapping(value = "/merchants")
   @ResponseBody
-  public ResponseEntity<Response<Merchant>> createMerchant(@RequestBody CreateMerchantRequest request) {
+  public ResponseEntity<Response<Merchant>> createMerchant(@Valid @RequestBody CreateMerchantRequest request) {
     log.info("CreatingMerchant: {}", request);
     Response<Merchant> response = merchantService.addMerchant(request);
 

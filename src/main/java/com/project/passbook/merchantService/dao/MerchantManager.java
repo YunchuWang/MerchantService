@@ -1,6 +1,6 @@
 package com.project.passbook.merchantService.dao;
 
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import com.project.passbook.merchantService.model.exceptions.types.ConflictException;
 import com.project.passbook.merchantService.model.exceptions.types.NotFoundException;
 import java.util.List;

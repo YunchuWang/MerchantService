@@ -19,12 +19,9 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
   public final ResponseEntity<Response> handleMerchantNotFoundExceptions(
       Exception ex, WebRequest request) {
     String errorMessage = ex.getMessage();
-    Response error = new Response(ErrorCode.NOT_FOUND,
-                                  errorMessage,
-                                  null);
+    Response error = new Response(ErrorCode.NOT_FOUND, errorMessage, null);
 
-    return new ResponseEntity<>(error,
-                                HttpStatus.BAD_REQUEST);
+    return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
   }
 
   @ExceptionHandler(ConflictException.class)

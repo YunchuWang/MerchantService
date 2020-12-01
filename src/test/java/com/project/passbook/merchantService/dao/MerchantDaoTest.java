@@ -6,7 +6,7 @@ import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
 import com.project.passbook.merchantService.MerchantServiceApplication;
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import java.util.List;
 import java.util.Optional;
 import javax.annotation.Resource;

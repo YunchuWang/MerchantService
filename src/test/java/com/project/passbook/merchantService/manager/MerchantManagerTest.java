@@ -2,7 +2,7 @@ package com.project.passbook.merchantService.manager;
 
 import com.project.passbook.merchantService.dao.MerchantDao;
 import com.project.passbook.merchantService.dao.MerchantManager;
-import com.project.passbook.merchantService.model.entities.Merchant;
+import com.project.passbook.merchantService.entities.Merchant;
 import com.project.passbook.merchantService.model.exceptions.types.ConflictException;
 import com.project.passbook.merchantService.model.exceptions.types.NotFoundException;
 import java.util.Collections;
@@ -21,16 +21,10 @@ import static org.mockito.Mockito.when;
 public class MerchantManagerTest {
 
   final Merchant TEST_MERCHANT_1 = Merchant.builder()
-                                     .id(1)
-                                     .name("testName1")
-                                     .phone("231323111")
-                                     .build();
-
-  final Merchant TEST_MERCHANT_2 = Merchant.builder()
-                                     .id(2)
-                                     .name("testName2")
-                                     .phone("231323112")
-                                     .build();
+                                           .id(1)
+                                           .name("testName1")
+                                           .phone("231323111")
+                                           .build();
 
   MerchantManager merchantManager;
   @Mock
